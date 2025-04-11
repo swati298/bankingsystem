@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Balance</title>
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E86C1;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        header h3 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input {
+            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2E86C1;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        
+        
+       
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" target="_self" title="Home">Home</a>
+            <a href="NewAccount.html" target="_self" title="New Account">New Account</a>
+            <a href="TransferMoney.html" target="_self" title="Transfer Money">Transfer Money</a>
+            <a href="CheckBalance.html" target="_self" title="Check Balance">Check Balance</a>
+            <a href="TransferDetailsUser" target="_self" title="TransferDetailsUser ">TransferDetailsUser</a>
+            <a href="Changepassword.html" target="_self" title="Change Password">Change Password</a>
+            <a href="LogoutServlet" target="_self" title="LogOut">LogOut</a>
+        </nav>
+    </header>
+    
+        <div class="contact-form">
+        <form action="checkbalance" method="POST">
+            <label for="number">Enter Account no. :</label>
+            <input type="number" id="number" name="accountno" required>
+            <button type="submit">Check Balance</button>
+        </form>
+        </div>
+   
+</body>
+</html>

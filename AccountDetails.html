@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2E86C1;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        header h3 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        footer {
+            height: 650px;
+            background-color: #f0f8ff;
+            padding: 40px;
+            text-align: center;
+        }
+        
+    
+        form {
+            margin-top: 50px;
+        }
+        button {
+            background-color: #2E86C1;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+</style>
+<body>
+    <header>
+        <nav>
+            <a href="home.html" target="_self" title="Home">Home</a>
+            <a href="AccountDetails.html" target="_self" title="Account Details">Account Details</a>
+            <a href="TransactionHistory" target="_self" title="Transaction History">Transaction History</a>
+            <a href="DebitHistory" target="_self" title="Debit History">Debit History</a>
+            <a href="CreditHistory" target="_self" title="Credit History">Credit History</a>
+            <a href="LogoutServlet" target="_self" title="LogOut">LogOut</a>
+        </nav>
+    </header>
+    <footer>
+        <form action="accountdetails">
+            <button type="submit">View</button>
+        </form>
+    </footer>
+</body>
+</html>
